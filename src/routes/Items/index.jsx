@@ -8,20 +8,18 @@ import TopNavBar from '../../components/TopNavBar'
 const Items = () => {
   const { restaurantId } = useParams()
   const [items, setItems] = useState([])
-  const [restaurant, setRestaurant] = useState({})
 
   useEffect(() => {
     axios
       .get(`${BASE_URL}/api/v1/restaurants/${restaurantId}/items`)
       .then((res) => {
-        setItems(res.data.items)
-        setRestaurant(res.data.restaurant)
+        setItems(res.data)
       })
   }, [])
 
   return (
     <div>
-      <TopNavBar restaurant={restaurant} />
+      <TopNavBar restaurantId={restaurantId} />
       <div className="container d-flex justify-content-center mt-2">
         <h1>All Items</h1>
       </div>
