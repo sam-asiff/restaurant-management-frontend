@@ -16,7 +16,7 @@ const TopNavBar = ({ restaurantId }) => {
     <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
       <div className="container-fluid">
         {restaurant && (
-          <Link className="navbar-brand" to={`restaurants/${restaurant.id}`}>
+          <Link className="navbar-brand" to={`/restaurants/${restaurant.id}`}>
             {restaurant.name}
           </Link>
         )}
