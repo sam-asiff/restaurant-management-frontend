@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import demoImage from '../../assets/image/sample_food_image.jpeg'
+import demoImage from '../../../assets/image/sample_food_image.jpeg'
 
 const ItemList = ({ item }) => (
   <div id="item.id" className="col-lg-3 list-item">

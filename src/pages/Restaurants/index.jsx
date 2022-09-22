@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { BASE_URL } from '../../constaints'
-import RestaurantList from './RestaurantList'
+import { RestaurantList } from '../../components/Restaurants'
 
 const Restaurants = () => {
   const [restaurants, setRestaurants] = useState([])

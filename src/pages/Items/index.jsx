@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import { BASE_URL } from '../../constaints'
-import ItemList from './ItemList'
+import ItemList from '../../components/Items/ItemList'
 import TopNavBar from '../../components/TopNavBar'
 
 const Items = () => {
