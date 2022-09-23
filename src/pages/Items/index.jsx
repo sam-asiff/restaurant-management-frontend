@@ -10,12 +10,18 @@ const Items = () => {
   const [items, setItems] = useState([])
 
   useEffect(() => {
-    axios
-      .get(`${BASE_URL}/api/v1/restaurants/${restaurantId}/items`)
-      .then((res) => {
-        setItems(res.data)
-      })
-  }, [])
+    const setItemsState = async () => {
+      try {
+        const response = await axios.get(
+          `${BASE_URL}/api/v1/restaurants/${restaurantId}/items`
+        )
+        setItems(response.data)
+      } catch (error) {
+        console.log(error.message)
+      }
+    }
+    setItemsState()
+  }, [restaurantId])
 
   return (
     <div>
