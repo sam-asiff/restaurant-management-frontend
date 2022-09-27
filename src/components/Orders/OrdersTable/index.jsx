@@ -16,7 +16,7 @@ const OrdersTable = ({ orders }) => {
           </thead>
           <tbody>
             {orders.map((order, key) => (
-              <tr>
+              <tr key={key}>
                 <td>{order.id}</td>
                 <td>{order.user.full_name}</td>
                 <td>{order.ordered_at}</td>

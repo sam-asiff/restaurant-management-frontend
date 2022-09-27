@@ -25,7 +25,7 @@ const Restaurant = () => {
 
   return (
     <div>
-      <TopNavBar restaurant={restaurant} />
+      <TopNavBar restaurantId={restaurantId} />
       <div className="container">
         <div className="d-flex justify-content-center">
           {!isRequesting && (

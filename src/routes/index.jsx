@@ -1,11 +1,11 @@
 import React from 'react'
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
-import Restaurants from './pages/Restaurants'
-import Restaurant from './pages/Restaurants/Restaurant'
-import Items from './pages/Items'
-import Item from './pages/Items/Item'
-import PageNotFound from './components/ErrorTemplates/index'
-import Orders from './pages/orders'
+import Restaurants from '../pages/Restaurants'
+import Restaurant from '../pages/Restaurants/Restaurant'
+import Items from '../pages/Items'
+import Item from '../pages/Items/Item'
+import PageNotFound from '../components/ErrorTemplates/index'
+import Orders from '../pages/orders'
 
 const AppRoutes = () => (
   <Router>

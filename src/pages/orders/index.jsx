@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { BASE_URL } from '../../constaints'
 import axios from 'axios'
-import OrdersTable from './ordersTable'
+import { OrdersTable } from '../../components/Orders'
 import { Button } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
